@@ -1,4 +1,3 @@
-// xep loai hoc sinh theo diem so 
 #include <stdio.h>
 #include <stdlib.h>
 int main()
