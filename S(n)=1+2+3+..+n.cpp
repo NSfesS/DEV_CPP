@@ -2,7 +2,7 @@
 #include<stdlib.h>
  int main()
  {
-  system("color 02");'
+  system("color 02");
   int n, S=0, i=1;
   printf("Nhap n:\n");
   scanf("%d",&n);
