@@ -1,3 +1,4 @@
+// còn nhiều sai sót lắm đang view và Fix dần
 #include<stdio.h>
 #include<math.h>
 int main()
