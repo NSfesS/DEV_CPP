@@ -1,3 +1,5 @@
+#include<stdio.h>
+#include<stdlib.h>
 int main()
 {
 	system("color 04");
@@ -13,7 +15,8 @@ int main()
 			printf("\nN phai lon hon hoac bang 1. nhap lai di!");
 		}
 
-	}while(n < 1);
+	}
+	while(n < 1);// dung while(n<1) de tao dieu kien neu nhap n<1 thi nhap lai 
 
 	while(i <= n)
 	{
