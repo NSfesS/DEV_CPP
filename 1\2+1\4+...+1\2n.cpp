@@ -17,7 +17,6 @@ int main()
 		{
 			printf("\nN phai lon hon hoac bang 1. nhap lai di!");
 		}
-
 	}
 	// dung while(n<1) de tao dieu kien nau nhap n<1 thi quay lai nhap dung 
  	while(n < 1);
