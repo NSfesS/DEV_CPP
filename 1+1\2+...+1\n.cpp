@@ -28,3 +28,4 @@ int main()
 	printf("\nTong 1 + 1/2 + ... + 1/%d la %.2f: ",n, S);
 	return 0;
 }
+// bai nay co nhieu cach viet khac nhau t co the viet theo cach while cung duoc
