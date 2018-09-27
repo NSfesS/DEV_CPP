@@ -28,3 +28,28 @@ int main()
 	printf("\n 1/2 + 1/4 +...+1/2*%d: %f",n,S);
 	return 0;
 }
+// cach 2 khi copy nho xoa 2 da " /*__*/ "
+/*#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    system("color 02 ");
+    int a, n;
+    a=1;
+    float S = 0;
+    printf("\nMay nhap n:");
+    scanf("%d",&n);
+     if(n < 1)
+     {
+		printf("Nhap sai roi nhe!");
+		return 0;
+	 }
+	 	while(a<= n)
+	 	{
+	 	S+=1.0/a;
+	 	printf("%f\n",S);
+	 	a++;
+		 }
+	printf("\nSn=%f",S);
+	return 0 ;
+}*/
