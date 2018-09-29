@@ -1,6 +1,7 @@
 //DEV_CPP
 #include <stdio.h>
 #include <stdlib.h>
+// khai bao ham int main() ket thuc phai return 0:
 int main()
 {
     system("color 02 ");
@@ -10,7 +11,7 @@ int main()
     scanf("%d",&a);
     	if (a<0)
 		{
-    	 printf("ban nhap sai");
+    	         printf("ban nhap sai");
 		 return 0;	
 		}
 		// for(khai bao bien,dieu kien,thay doi gia tri)
