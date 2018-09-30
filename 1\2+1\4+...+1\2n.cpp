@@ -5,6 +5,8 @@ int main()
 {
 	//dung quan tam thang nay
 	system("color 04");
+	printf("*--------------- WELCOME TO GITHUB ---------------*");
+        printf("\n*------------------ PHONG PHAM ----------------*");
 	int i, n;
 	// so thap phan nen ta phai khai nao S bang float
 	float S=0;
