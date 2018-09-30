@@ -3,6 +3,8 @@
 int main()
 {
     system("color 02 ");
+    printf("*--------------- WELCOME TO GITHUB ---------------*");
+    printf("\n*------------------ PHONG PHAM ----------------*");
     int a = 1, n;
     float S = 0;
     		do
