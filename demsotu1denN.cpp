@@ -5,6 +5,8 @@
 int main()
 {
     system("color 02 ");
+    printf("*--------------- WELCOME TO GITHUB ---------------*");
+    printf("\n*------------------ PHONG PHAM ----------------*");
     int a,i ;
     int sum = 0;
     printf("Tinh tong cac so tu 1 den n\nNhap n: ");
