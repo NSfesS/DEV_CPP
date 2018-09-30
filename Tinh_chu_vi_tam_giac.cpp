@@ -5,6 +5,8 @@
 	int main()
 {
 	system("color 02");
+     	printf("*--------------- WELCOME TO GITHUB ---------------*");
+        printf("\n*------------------ PHONG PHAM ----------------*");
 	float r, C ;
 	float pi = 3.14;
 	printf("Nhap r :\n");
