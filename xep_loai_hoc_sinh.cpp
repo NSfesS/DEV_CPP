@@ -3,9 +3,11 @@
 int main()
 {
 	system("color 02 ");
+	printf("*--------------- WELCOME TO GITHUB ---------------*");
+        printf("\n*------------------ PHONG PHAM ----------------*");
 	float diem;
-    printf("Ploai hoc sinh theo diem so, Moi ban nhap diem hoc sinh \n");
-    scanf("%f",&diem);
+        printf("Ploai hoc sinh theo diem so, Moi ban nhap diem hoc sinh \n");
+        scanf("%f",&diem);
    	 	if (diem < 0 || diem > 10)
    		
 	    {
