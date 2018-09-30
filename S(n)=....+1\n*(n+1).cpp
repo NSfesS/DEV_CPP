@@ -6,6 +6,7 @@ int main()
     system("color 02 ");
     printf("*--------------- WELCOME TO GITHUB ---------------*");
     printf("\n*------------------ PHONG PHAM ----------------*");
+    printf("\nLien he:phongpham663@gmail.com");
     int a,n;
     	a=1;
 	float S;
@@ -17,7 +18,7 @@ int main()
 			scanf("%d",&n);
 			if(n<0)
 				{
-					printf("Nhap sao. Nhap lai");
+				printf("Nhap sao. Nhap lai");
 				}
 		}
 		while(n<0);
