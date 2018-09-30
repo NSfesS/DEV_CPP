@@ -3,6 +3,8 @@
 int main()
 {
 	system("color 04");
+	printf("*--------------- WELCOME TO GITHUB ---------------*");
+        printf("\n*------------------ PHONG PHAM ----------------*");
 	int i, n;
 	float S;
 	S = 0; i = 1;
@@ -16,11 +18,13 @@ int main()
 		}
 
 	}
-	while(n < 1);// dung while(n<1) de tao dieu kien neu nhap n<1 thi nhap lai 
+	// dung while(n<1) de tao dieu kien neu nhap n<1 thi nhap lai
+	while(n < 1); 
 
 	while(i <= n)
 	{
-		S = S + 1.0 / i;  // phai la 1.0 / i, vi S duoc khai bao theo float-point
+		// phai la 1.0 / i, vi S duoc khai bao theo float-point
+		S = S + 1.0 / i; 
 		i++;
 	}
 	printf("i = %d", i);
