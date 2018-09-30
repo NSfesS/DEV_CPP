@@ -4,6 +4,8 @@
  int main()
  {
  	system("color 02");
+   printf("*--------------- WELCOME TO GITHUB ---------------*");
+   printf("\n*------------------ PHONG PHAM ----------------*");
     float a , b ,c ;
  	float DTB;
  	printf("Tinh diem TB 3 mon Toan Ly Hoa\n");
