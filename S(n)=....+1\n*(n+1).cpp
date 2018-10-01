@@ -3,11 +3,7 @@
 #include <stdlib.h>
 int main()
 {
-    system("color 02 ");
-    printf("*--------------- WELCOME TO GITHUB ---------------*");
-    printf("\n*------------------ PHONG PHAM ----------------*");
-    printf("\nLien he:phongpham663@gmail.com");
-    int a,n;
+	int a,n;
     	a=1;
 	float S;
 		S=0;
@@ -30,6 +26,7 @@ int main()
 			}
 			// lam tron 2 so thap phan
 		printf("\nTong lam tron la:\t%.2f",S);
+	system("color 05");
 	return 0 ;
 }
 
