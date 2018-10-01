@@ -1,4 +1,4 @@
-# DEV_CPP
+//DEV_CPP_with:PHONG PHAM
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 100
