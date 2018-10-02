@@ -13,7 +13,7 @@ int main()
     	while(a<=n)
     	{
     		S+=a*a;
-    		printf("%d\n",S);
+    		printf("%f\n",S);
     		a++;
 		}
 	printf("Tong Sn= %f\n",S);
