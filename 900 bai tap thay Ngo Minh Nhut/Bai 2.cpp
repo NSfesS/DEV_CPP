@@ -1,7 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    int a=1,S=0,n;
+    int a=1,n;
+    float S=0;
     do
 	{
 		printf("Nhap n bat ky:\t");
@@ -15,6 +16,6 @@ int main()
     		printf("%d\n",S);
     		a++;
 		}
-	printf("Tong Sn= %d\n",S);
+	printf("Tong Sn= %f\n",S);
 	return 0 ;
 }
