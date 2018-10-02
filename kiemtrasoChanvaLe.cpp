@@ -1,4 +1,4 @@
-//DEV_CPP_whith:PHONG PHAM
+//DEV_CPP_with:PHONG PHAM
 #include <stdio.h>
 #include <stdlib.h>
 // libary clear console man hinh(system("cls");)
