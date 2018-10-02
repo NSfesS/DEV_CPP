@@ -21,7 +21,7 @@ int main()
 		// phai la 1.0 / i, vi S duoc khai bao theo float-point
 		S+=1.0/(2*a);
 	}
-	printf("\nSn= %f",S);
+	printf("\nTong la Sn= %f",S);
 	return 0;
 }
 // cach 2 khi copy nho xoa 2 da " /*__*/ "
