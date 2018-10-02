@@ -15,7 +15,6 @@ int main()
     		printf("%d\n",S);
     		a++;
 		}
-	printf("S = %d\n",S);
-	system("color 05");
+	printf("Tong Sn= %d\n",S);
 	return 0 ;
 }
