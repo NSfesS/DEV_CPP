@@ -1,9 +1,6 @@
 #include<stdio.h>
-// dung quan tam thang nay
-#include<stdlib.h>
  int main()
  {
-    system("color 02");
     int n, S=0, i=1; 
     printf("\nNhap n:\t");
     scanf("%d",&n);
