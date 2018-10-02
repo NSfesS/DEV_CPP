@@ -6,7 +6,7 @@ int main()
 	{
 		printf("Nhap n bat ky:\t");
         scanf("%d",&n);
-    	if(n<0) printf("Phai nhap n<0, Nhap lai:\t");
+    	if(n<0) printf("Phai nhap n>0, Nhap lai:\t");
     }
     while(n<0);
     	while(a<=n)
