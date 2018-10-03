@@ -10,12 +10,12 @@ int main()
 		{
 			printf("\nNhap n:");
 			scanf("%d",&n);
-			if(n<0) printf("Nhap sai. Nhap lai");
+			if(n < 0) printf("Nhap sai. Nhap lai");
 		}
 		while(n<0);
 		a=1;
 		S=0;
-		while (a<=n)
+		while (a <= n)
 		{
 			S+=1.0/(a*(a+1));
 			printf("S(%d)=%.3f\n",a,S);
@@ -25,3 +25,5 @@ int main()
 	return 0 ;
 }
 // chu code khoang trang ro rang, thut ra thut vao hop ly nhe^^.
+/**********CHUC CAC BAN HOC TOT********************/
+
