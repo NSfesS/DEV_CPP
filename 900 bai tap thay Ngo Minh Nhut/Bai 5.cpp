@@ -15,7 +15,7 @@ int main()
 		S=0;
 		while (a <= n)
 		{
-			S+=1.0/(2a+1);
+			S+=1.0/(2*a+1);
 			printf("S(%d)=%.3f\n",a,S);
 			a++;
 		}
