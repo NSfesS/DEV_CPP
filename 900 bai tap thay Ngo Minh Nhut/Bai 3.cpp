@@ -1,8 +1,6 @@
 #include<stdio.h>
-#include<stdlib.h>
 int main()
 {
-	system("color 02");// mau xanh la 
 	int a,n;
 	float S;
 	do
@@ -22,8 +20,7 @@ int main()
 		printf("S(%d) = %f\n",a,S);
 		a++;
 	}
-	printf("\nSn= %.2f: ",S);
-	system("color 05");// mau tim 
+	printf("\n\t=>Sn= %.2f: ",S);
 	return 0;
 }
 // bai nay co nhieu cach viet khac nhau ta co the viet theo cach (while) cung duoc^^.
