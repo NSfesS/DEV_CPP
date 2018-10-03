@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
  {
-    int n, S, a; 
+    int n, a, S; 
   	printf("Tinh tong 1+2+3+...+n");
 	do
 		{
