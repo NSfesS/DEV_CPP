@@ -27,5 +27,5 @@ int main()
     printf("\n\t=>S(n)= %d\n",S);
     return 0 ;
   }
-// bai nay co nhieu cach viet khac nhau ta co the viet theo cach (while) cung duoc^^.
 // chu code khoang trang ro rang, thut ra thut vao hop ly nhe^^.
+/**********CHUC CAC BAN HOC TOT********************/
