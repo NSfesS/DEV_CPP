@@ -2,6 +2,7 @@
 int main()
 {
     int n, a, S;
+    printf("Tinh tong 1 + 2 + 3 +...+ n^2");
     do
    {
 	printf("\nNhap n:\t");
