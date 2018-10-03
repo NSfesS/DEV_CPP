@@ -1,55 +1,35 @@
-// còn nhiều sai sót lắm đang view và Fix dần
 #include<stdio.h>
 #include<math.h>
+#include<stdlib.h>
 int main()
- {
- 	float a , b , c , x1 , x2 , delta;
- 	 printf("giai ptrinh bac 2 ax^2 + bx + c = 0 \n Nhap a:\n");
- 	 scanf("%f",&a);
- 	 printf("Nhap b:\n");
- 	 scanf("%f", &b);
- 	 printf("Nhap c:\n",&c);
- 	 scanf("%f",&c);
- 	if (a==0)
-	 {
- 		if (b==0) 
-		     {
- 			if (c==0)
- 			printf("Ptrinh vo so nghiem");
- 			else 
- 			printf("Ptrinh vo nghiem");
- 			
-			 }
-			 else
-			  {
-			 	x1=(-b)/c;
-			 	printf("Ptrinh co 1 nghiem dac biet: %f",x1);
-			 }
- 			
-	 }	
-	else 
-	 {
-		 	delta = b*b - 4*a*c;
-		 	if ( delta < 0)
-		 	printf("Ptrinh vo nghiem");
-		 	if(delta > 0) 
-		 	{
-		 	  	x1 = (-b + sqrt(delta))/(2*a);
-		 	  	x2 = (-b - sqrt(delta))/(2*a);
-		 	  	printf("ptrinh co 2 nghiem pbiet\t");
-		 	 	printf("nghiem x1 :");
-		 	  	printf("%f",x1);
-		      	printf("nghiem x2 :");
-		 		printf("%f",x2);
-		     		if(delta = 0)
-					 {
-				    	x1 =  (-b)/2*a;
-		     			printf("Ptrinh co 1 nghiem kep");
-		     			printf("x1=x2: %f",x1);
-		        	 }
-		    }
-			
-	 }
- 	return 0 ;
- 	
- }
+{
+system("color 02");
+float a,b,c,delta;
+printf("\n Nhap vao a:\t");
+scanf("%f",&a);
+
+printf("\n Nhap vao b:\t");
+scanf("%f",&b);
+
+printf("\n Nhap vao c:\t");
+scanf("%f",&c);
+
+if(a==0)
+{
+	if(b==0)
+	{
+	if(c==0) printf("\n Phuong trinh  co vo so nghiem!");
+	else printf("\n Phuong trinh  vo nghiem!");
+	}
+	else printf("\n Phuong trinh da cho co nghiem la: %.3f",-c/b);
+}
+else
+{
+delta=b*b-4*a*c;
+if (delta<0) printf("phuong trinh da cho vo nghiem!");
+else if (delta=0) printf("phuong trinh da cho co nghiem kep la: %.3f",-b/(2*a));
+else printf("phuong trinh da cho co 2 nghiem la: x1= %.3f\t x2= %.3f",(-b+sqrt(delta))/(2*a),(-b-sqrt(delta))/(2*a));
+}
+system("color 05");
+return 0;
+}
