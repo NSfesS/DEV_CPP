@@ -14,8 +14,7 @@ int main()
     S=0;
     while(a <= n)
     {
-    	S+= a*a;
-    	printf("S(%d)= %d\n",a,S);
+    	printf("S(%d)= %d\n",a,S+= a*a);
     	a++;
 	}
 	printf("\n\t=>Sn= %d",S);
