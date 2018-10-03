@@ -16,11 +16,10 @@ int main()
 	a=1;
 	S=0;
 	while(a <= n)
-	{
+	{	
 		// phai la (1.0 / i), vi S duoc khai bao theo (float-point).
-		S+=1.0 / a; 
 		//%.3f la lam tron den so thap phan thu 3.
-		printf("S(%d) = %.3f\n",a,S);
+		printf("S(%d) = %.3f\n",a,S+=1.0 / a);
 		a++;
 	}
 	printf("\n\t=>Sn= %.3f: ",S);
