@@ -1,27 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
-    int a,n;
+	system("color 02 ");
+	int a, n;
 	float S;
-	printf("Tinh tong 1 + 1/3 + 1/5 + ... + 1/(2n + 1)");
-		do	
+	printf("Tinh tong 1/2 + 2/3 + 3/4 + .... + n / n + 1");
+	do
+	{
+	 	printf("\nNhap n:");
+	 	scanf("%d",&n);
+	 	if(n < 1) printf("Nhap n>=1. Nhap lai");
+	}
+		while (n < 1);
+		a = 1;
+		S = 0;
+		while(a <= n)
 		{
-			printf("\nNhap n:");
-			scanf("%d",&n);
-			if(n < 0) printf("Nhap sai. Nhap lai");
-		}
-		while(n < 0);
-		a=1;
-		S=0;
-		while (a <= n)
-		{
-			S+=1.0/(a*(a+1));
-			printf("S(%d)=%.3f\n",a,S);
+			printf("S(%d)= %.3f\n",a,S+=(float)a/(a+1));
 			a++;
 		}
-	printf("\n\tSn= %.3f",S);
+	printf("\n\t=>Sn= %.3f",S);
 	return 0 ;
 }
-// chu code khoang trang ro rang, thut ra thut vao hop ly nhe^^.
-/**********CHUC CAC BAN HOC TOT********************/
-
