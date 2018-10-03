@@ -1,32 +1,24 @@
-// DEV_CPP
 #include <stdio.h>
-#include <stdlib.h>
 int main()
 {
-	int a,n;
-    	a=1;
+    int a,n;
 	float S;
-		S=0;
-	printf("Tinh S(n)=1/1x2+1/2x3+...+1/n(n+1)");
+	printf("Tinh tong 1 + 1/3 + 1/5 + ... + 1/(2n + 1)");
 		do	
 		{
 			printf("\nNhap n:");
 			scanf("%d",&n);
-			if(n<0)
-				{
-				printf("Nhap sao. Nhap lai");
-				}
+			if(n < 0) printf("Nhap sai. Nhap lai");
 		}
-		while(n<0);
-			while (a<=n)
-			{
-				S+=1.0/(a*(a+1));
-				printf("list plus:%f\n",S);
-				a++;
-			}
-			// lam tron 2 so thap phan
-		printf("\nTong lam tron la:\t%.2f",S);
-	system("color 05");
+		while(n < 0);
+		a=1;
+		S=0;
+		while (a <= n)
+		{
+			S+=1.0/(a*(a+1));
+			printf("S(%d)=%.3f\n",a,S);
+			a++;
+		}
+	printf("\n\tSn= %.3f",S);
 	return 0 ;
 }
-
