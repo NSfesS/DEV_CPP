@@ -22,3 +22,6 @@ int main()
 	printf("\n\tSn= %.3f",S);
 	return 0 ;
 }
+// chu code khoang trang ro rang, thut ra thut vao hop ly nhe^^.
+/**********CHUC CAC BAN HOC TOT********************/
+
