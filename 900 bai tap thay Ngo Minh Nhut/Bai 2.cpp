@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int a, n, S;
+    int n, a, S;
     do
-	{
-		printf("\nNhap n:\t");
+   {
+	printf("\nNhap n:\t");
         scanf("%d",&n);
     	if(n < 0) printf("Phai nhap n>=0, Nhap lai!");
     }
