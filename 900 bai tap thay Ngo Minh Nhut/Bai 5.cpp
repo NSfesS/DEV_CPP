@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 int main()
 {
-    system("color 02 ");
     int a,n;
 	float S;
 	printf("Tinh tong 1 + 1/3 + 1/5 + ... + 1/(2n + 1)");
@@ -17,7 +15,7 @@ int main()
 		S=0;
 		while (a <= n)
 		{
-			S+=1.0/(a*(a+1));
+			S+=1.0/(2a+1);
 			printf("S(%d)=%.3f\n",a,S);
 			a++;
 		}
