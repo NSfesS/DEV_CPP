@@ -16,8 +16,7 @@ int main()
 	a = 1;
 	while(a <= n)
 	{
-		S+= 1.0 / (2*a);
-		printf("S(%d)= %.3f\n",a,S);
+		printf("S(%d)= %.3f\n",a,S+= 1.0 / (2*a));
 		a++;
 	}
 	printf("\n\tSn= %.3f",S);
