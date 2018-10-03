@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int a,n;
+	int n,a;
 	float S;
 	printf("Tinh tong 1 + 1/2 + 1/3 + ... + 1/n");
 	do
@@ -19,10 +19,10 @@ int main()
 	{
 		// phai la (1.0 / i), vi S duoc khai bao theo (float-point).
 		S+=1.0 / a; 
-		printf("S(%d) = %f\n",a,S);
+		printf("S(%d) = %.3f\n",a,S);
 		a++;
 	}
-	printf("\n\t=>Sn= %.2f: ",S);
+	printf("\n\t=>Sn= %.3f: ",S);
 	return 0;
 }
 // bai nay co nhieu cach viet khac nhau ta co the viet theo cach (while) cung duoc^^.
