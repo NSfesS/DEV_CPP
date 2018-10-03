@@ -19,6 +19,7 @@ int main()
 	{
 		// phai la (1.0 / i), vi S duoc khai bao theo (float-point).
 		S+=1.0 / a; 
+		//%.3f la lam tron den so thap phan thu 3.
 		printf("S(%d) = %.3f\n",a,S);
 		a++;
 	}
