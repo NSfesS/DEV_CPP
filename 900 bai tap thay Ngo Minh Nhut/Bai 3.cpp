@@ -9,13 +9,14 @@ int main()
 		scanf("%d", &n);
 		if(n < 1) printf("\nNhap n>=1. Nhap lai!");
 	}
-	// dung while(n<1) de tao dieu kien neu nhap (n<1) thi nhap lai
+	// dung while(n<1) de tao dieu kien neu nhap (n<1) thi nhap lai.
 	while(n < 1); 
+	//(1/n) ta co a!=0.
 	a=1;
 	S=0;
 	while(a <= n)
 	{
-		// phai la (1.0 / i), vi S duoc khai bao theo (float-point)
+		// phai la (1.0 / i), vi S duoc khai bao theo (float-point).
 		S+=1.0 / a; 
 		printf("S(%d) = %f\n",a,S);
 		a++;
