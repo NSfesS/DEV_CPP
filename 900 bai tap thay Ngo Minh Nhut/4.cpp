@@ -3,7 +3,7 @@ int main()
 {
 	int a, n;
 	float S;
-	printf("Tinh tong 1/2 + 1/4 + ... + 1/2n")
+	printf("Tinh tong 1/2 + 1/4 + ... + 1/2n");
 	do
 	{
 		printf("\nNhap n: ");
