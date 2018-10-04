@@ -16,11 +16,11 @@ int main()
 	a = 1;
 	while(a <= n)
 	{
-		printf("S(%d)= %.3f\n",a,S+= 1.0 / (2*a));
+		//ep (float) de chuyen phep tinh (int) sang (float)
+		S+= float(1) / (2*a);
+		printf("S(%d)= %.3f\n",a,S);
 		a++;
 	}
 	printf("\n\tSn= %.3f",S);
 	return 0;
 }
-// chu code khoang trang ro rang, thut ra thut vao hop ly nhe^^.
-/**********CHUC CAC BAN HOC TOT********************/
