@@ -15,7 +15,7 @@ int main()
 		S = 0;
 		while(a <= n)
 		{
-			S+=a/a+1;
+			S+=float(a)/a+1;
 			printf("S(%d)= %.3f\n",a,S);
 			a++;
 		}
