@@ -20,7 +20,7 @@ int main()
 		S = 0;
 		while (a <= n)
 		{
-			printf("S(%d)=%d\n",aS+= a);
+			printf("S(%d)=%d\n",a,S+= a);
 			a++;	
 		}	
     printf("\n\t=>S(n)= %d\n",S);
