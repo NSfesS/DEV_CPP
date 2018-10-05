@@ -1,19 +1,19 @@
-#include<stdlib.h>
 #include <stdio.h>
 #include <math.h>
 int main()
 {
-system("color 02");//mau xanh la de
-int n,x,T;
+	printf("Tinh T(x,n)=x^n");
+	int x,n,T; 
+	
+	printf("\nNhap x= ");
+	scanf("%d",&x);
+	
+	printf("\nnhap n=");
+	scanf("%d",&n);
+	
+    T=pow(x,n);
 
-printf("\nNhap n = ");
-scanf("%d",&n);
+printf("\t Tinh %d^%d=%d",x,n,T);
 
-while (n < 0 );
-printf("\nnhap x =");
-scanf("%d",&x);
-
-T=pow(x,n);
-printf("\n\t Tinh %d^%d=%d",x,n,T);
 return 0;
 }
