@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 int main()
 {
-    system("color 02 ");
     int n,a,p,S;
     printf("Tinh tong 1 x 2 x 3...x N;");
     do
@@ -25,6 +23,5 @@ int main()
 		p++;//tac dung la in ra stt S(1)->S(7)
 	}
 	printf("\n\tSn= %d",S);
-	system("color 5");
 	return 0 ;
 }
