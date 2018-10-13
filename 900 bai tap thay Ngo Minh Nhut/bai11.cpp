@@ -1,3 +1,4 @@
+// bai nay dung bien flag de hoi user co muon exits hay next.
 #include <stdio.h>
 int main()
 {
