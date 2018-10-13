@@ -23,7 +23,7 @@ int main()
 			printf("\n\tS(%d)=%d",a,S);
 			a++;
 		}
-	printf("\nNhap o de thoat, Nhap so bat ky de NEXT");
+	printf("\nNhap o de thoat, Nhap so bat ky de tiep tuc:[]\b\b");
 	scanf("%d",&flag);
 	}while(flag!=0);
 	return 0 ;
