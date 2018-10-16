@@ -13,10 +13,10 @@ int main()
 		//Nhap vao bien n
 		do
 		{
-			printf("Nhap vao dong:");
+			printf("Nhap vao dong:\a");
 			scanf("%d", &row);
 
-			printf("Nhap vao cot");
+			printf("Nhap vao cot\a");
 			scanf("%d", &col);
 
 			if ((row <= 0 || row > MAX) || (col <= 0 || col > MAX))
