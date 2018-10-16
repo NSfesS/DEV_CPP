@@ -21,9 +21,10 @@ int main()
 		{
 			P=P*a;
 			S=S+P;
-			printf("\n\tS(%d)=%d",a,S);
+			printf("\nS(%d)=%d",a,S);
 			a++;
 		}
+	    printf("\n\tS(n)=%d",S);
 	printf("\nNhap o de thoat, Nhap so bat ky de tiep tuc:[]\b\b");
 	scanf("%d",&flag);
 	}while(flag!=0);
