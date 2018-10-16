@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>=
+#include <stdio.h>
 int main()
 {
 	int n, flag;
@@ -9,7 +9,7 @@ int main()
 	{
 		do
 		{
-			printf("\nNhap n:");
+			printf("\nNhap n:\a");
 			scanf("%d", &n);
 			if (n < 0) printf("\nPhai nhap n>0,Nhap lai!:");
 		} while (n < 0);
