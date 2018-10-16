@@ -9,7 +9,7 @@ int main()
 		int x;
 		do
 		{
-			printf("\nNhap x");
+			printf("\nNhap x:\a");
 			scanf("%d", &x);
 			if (x < 0) printf("\nPhai nhap n > 0,Nhap lai!");
 		} while (x < 0);
