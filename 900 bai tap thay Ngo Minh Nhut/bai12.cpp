@@ -16,7 +16,7 @@ int main()
 		int n, S = 0;
 		for (n = 1; n <= x; n++)
 		{
-			S = pow(x, n);
+			S += pow(x, n);
 			printf("\nS(%d)=%d", n, S);
 		}
 		printf("\n\tS(n)=%d", S);
