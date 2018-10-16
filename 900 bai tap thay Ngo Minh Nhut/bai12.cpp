@@ -20,7 +20,7 @@ int main()
 			printf("\nS(%d)=%d", n, S);
 		}
 	printf("\nKet qua\tS(n)=%d", S);
-	printf("\nNhap 0 de thoat, Nhap ky tu bat ky de tiep tuc[_]\b\b");
+	printf("\nNhap 0 de thoat, Nhap ky tu bat ky de tiep tuc[_]\a\b\b");
 	scanf("%d",&flag);
 	}while (flag!=0);
 	return 0;
