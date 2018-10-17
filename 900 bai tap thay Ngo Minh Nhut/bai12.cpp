@@ -18,9 +18,9 @@ int main()
 		for (n = 1; n <= x; n++)
 		{
 			S += pow(double(x), double(n));
-			printf("\nS(%d)=%f", n, S);
+			printf("\nS(%d)=%.3f", n, S);
 		}
-		printf("\n\tS(n)=%f", S);
+		printf("\n\tS(n)=%.3f", S);
 		printf("\nNhap 0 de thoat, Nhap ky tu bat ky de tiep tuc[_]\b\b");
 		scanf("%d", &flag);
 	}while (flag != 0);
