@@ -12,12 +12,12 @@ int main()
 		{
 			printf("\nNhap x:\a");
 			scanf("%d", &x);
-			if (x < 0) printf("\nPhai nhap n > 0,Nhap lai!");
+			if (x < 0) printf("\nPhai nhap x > 0,Nhap lai!");
 		} while (x < 0);
 		int n, S = 0;
 		for (n = 1; n <= x; n++)
 		{
-			S = pow(x, n);
+			S += pow(x, n);
 			printf("\nS(%d)=%d", n, S);
 		}
 		printf("\n\tS(n)=%d", S);
