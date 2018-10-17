@@ -17,7 +17,7 @@ int main()
 			if (x < 0 || n < 2) printf("\nPhai nhap x > 0 and Nhap n >= 2,Nhap lai!");
 		} while (x < 0 || n < 2);
 		int i;
-		float S = 0.0;
+		float S = 0;
 		for (i = 1; i <= n; i++)
 		{
 			S += pow(double(x),double(2*i));
