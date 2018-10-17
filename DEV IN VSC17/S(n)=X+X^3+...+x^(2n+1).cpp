@@ -21,12 +21,12 @@ int main()
 		} while (n < 0);
 		float S = 0;
 		int i;
-		for (i = 1; i <= n; i++)
+		for (i = 0; i <= n; i++)
 		{
 			S += pow(double(x), double((2 * i) + 1));
-			printf("\nS(%d)=%f", i, S);
+			printf("\nS(%d)=%.3f", i, S);
 		}
-		printf("\n\tSn=%f", S);
+		printf("\n\tSn=%.3f", S);
 		printf("\nNhap 0 de thoat, Nhap bat ky de tiep tuc:[_]\b\b");
 		scanf("%d", &flag);
 	} while (flag != 0);
