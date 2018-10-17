@@ -18,7 +18,7 @@ int main()
 		} while (n < 0);
 		float S = 0;
 		int i;
-		for (i = 1; i <= n; i++)
+		for (i = 0; i <= n; i++)
 		{
 			S += pow(double(x), double((2 * i) + 1));
 			printf("\nS(%d)=%f", i, S);
