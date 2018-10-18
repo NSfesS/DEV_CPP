@@ -21,9 +21,9 @@ int main()
 		{
 			S +=float (1) /(i + a);
 			a++;
-			printf("\nS(%d)=%f", i, S);
+			printf("\nS(%d)=%.3f", i, S);
 		}
-		printf("\n\t=>Sn=%d", S);
+		printf("\n\t=>Sn=%.3f", S);
 		printf("\nNhap 0 de thoat, Nhap bat ky de tiep tuc [_]\b\b");
 		scanf("%d", &flag);
 	} while (flag != 0);
