@@ -1,3 +1,4 @@
+// user duoc quyen nhap 0
 #include <stdio.h>
 #include <math.h>
 int main()
