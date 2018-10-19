@@ -7,18 +7,25 @@ int main()
 	{
 		printf("Tinh S(n)=x+x^2+...+x^n");
 		float x;
+		int n;
 		do
 		{
-			printf("\nNhap x:\a");// \a phat ra tieng bip khi compiler ^^
+			printf("\nNhap x:\a");
 			scanf("%f", &x);
-			if (x < 0) printf("\nPhai nhap x > 0,Nhap lai!");
-		} while (x < 0);
+			if (x == 0) printf("\n>>Phai nhap x != 0,Nhap lai!<<");
+			do
+			{
+			printf("\nNhap n:\a");
+			scanf("%d",&n);
+			if (n < 0)	printf("\n>>Nhap n > 0 ,Nhap lai!<<");
+			}while(n < 0);
+		} while (x == 0 || n < 0);
 		float S = 0;
-		int n;
-		for (n = 1; n <= x; n++)
+		int i;
+		for (i = 1; i <= n; i++)
 		{
-			S += pow(double(x), double(n));
-			printf("\nS(%d)=%.3f", n, S);
+			S += pow(double(x),double(i));
+			printf("\nS(%d)=%.3f", i, S);
 		}
 		printf("\n\tS(n)=%.3f", S);
 		printf("\nNhap 0 de thoat, Nhap ky tu bat ky de tiep tuc[_]\b\b");
