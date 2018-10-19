@@ -5,6 +5,7 @@ int main()
 	int flag = 1;
 	do
 	{
+		// user co the nhap x la 1 complex nen ep (float) se good^^
 		float x;
 		int n;
 		do
@@ -12,14 +13,20 @@ int main()
 			printf("\n\nTinh S(n) = x^2 + x^4 + ... + x^2n");
 			printf("\nNhap x bat ky:\a");
 			scanf("%f", &x);
+			if( x==0 )	printf("\n>>Phai nhap x!=0. Nhap lai!<<"); 
+			do
+			{
 			printf("\nNhap n bat ky:\a");
 			scanf("%d", &n);
-			if (x < 0 || n < 2) printf("\nPhai nhap x > 0 and Nhap n >= 2,Nhap lai!");
-		} while (x < 0 || n < 2);
+			// xet dieu kien x voi n nhap vo cho thoa theo de bai^^
+			if (n < 2) printf("\n>>Phai nhap n >= 2. Nhap lai!<<");
+			}while(n < 2);	
+		} while (x == 0);
 		int i;
 		float S = 0;
 		for (i = 1; i <= n; i++)
 		{
+			// operater (pow) khai bao #include <math.h>
 			S += pow(double(x),double(2*i));
 			printf("\nS(%d)=%.3f", i, S);
 		}
