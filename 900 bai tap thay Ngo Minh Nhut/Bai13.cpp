@@ -1,3 +1,4 @@
+// Condition la khong cho nguoi dung nhap so 0;
 #include <stdio.h>
 #include <math.h>
 int main()
