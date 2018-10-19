@@ -11,7 +11,7 @@ int main()
 		{
 			printf("\nNhap x:\a");// \a phat ra tieng bip khi compiler ^^
 			scanf("%f", &x);
-			if (x < 0) printf("\nPhai nhap n > 0,Nhap lai!");
+			if (x < 0) printf("\nPhai nhap x > 0,Nhap lai!");
 		} while (x < 0);
 		float S = 0;
 		int n;
