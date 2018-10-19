@@ -16,6 +16,7 @@ int main()
 		float S = 0;
 		for (i = 1; i <= n; i++)
 		{
+			// Chu y ep (float) vi co dap so xe ra so thuc.
 			S +=float (1) /(i + a);
 			a++;
 			printf("\nS(%d)=%.3f", i, S);
