@@ -20,6 +20,7 @@ int main()
 //In ra thong bao 
 void notifications()
 {
+	system("color 02");
 	printf("\t\t\t\t\tTINH S(n) = x + x^2/2! + x^3/3! + ... + x^n/N!");
 }
 //Input Data
