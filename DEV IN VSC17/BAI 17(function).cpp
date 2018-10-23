@@ -5,8 +5,8 @@
 float x;
 int n;
 void notifications();
-void input_x_n(float,int);
-float tong(float, int);
+void input_x_n(float *x,int *n);
+float tong(float *a, int*n);
 //BEGIN
 int main()
 {
@@ -20,7 +20,6 @@ int main()
 //In ra thong bao 
 void notifications()
 {
-  system("color 02");
 	printf("\t\t\t\t\tTINH S(n) = x + x^2/2! + x^3/3! + ... + x^n/N!");
 }
 //Input Data
