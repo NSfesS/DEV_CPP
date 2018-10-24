@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
 float x;
 int n;
 void inputDATA(float *x, int *n);
@@ -8,7 +7,6 @@ float TONG(float x, int n);
 // ham nay co tac dung thong bao (2)
 void notifications()
 {
-	system("color 02");
 	printf("\t\t\t\t\TINH 1 + x^2/2! + x^4/4! + ... + x^2n/(2n)!");
 }
 // HAM CHINH(1)
