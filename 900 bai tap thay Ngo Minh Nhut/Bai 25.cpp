@@ -1,3 +1,4 @@
+// Bai 26_27 dua theo cac bai con lai lam nha ^^
 #include <stdio.h>
 
 void notifications();
