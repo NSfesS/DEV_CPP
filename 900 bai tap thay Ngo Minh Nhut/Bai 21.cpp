@@ -38,6 +38,7 @@ int tinhTOAN(int n)
 		{
 			printf("\t%d", i);
 			S += i;
+			// tuong tu bai 21 thay S+=i; thanh S*=i;
 		}
 	}
 	printf("\n\t[KET QUA] Tong cac uoc so cua (%d) la : %d\n", n, S);
