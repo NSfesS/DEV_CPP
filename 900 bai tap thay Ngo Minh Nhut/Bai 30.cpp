@@ -27,8 +27,8 @@ void input(int *n)
     {
         printf("\n**Nhap n: \a");
         scanf("%d", &*n);
-        if (n < 0)  printf("\n>>PHAI NHAP  n > 0. NHAP LAI!");
-    } while (n < 0);
+        if (*n < 0)  printf("\n>>PHAI NHAP  n > 0. NHAP LAI!");
+    } while (*n < 0);
 }
 int perform(int n)
 {
