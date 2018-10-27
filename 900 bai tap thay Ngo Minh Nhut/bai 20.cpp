@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void notifications();
-void input(int *p);
+void input(int *n);
 int tinhTOAN(int n);
 int main()
 {
@@ -21,14 +21,14 @@ void notifications()
 {
 	printf("\n\t\t\t\tLIET KE CAC \"UOC SO\" NGUYEN ");
 }
-void input(int *p)
+void input(int *n)
 {
 	do
 	{
 		printf("\nInput so nguyen DUONG: \a");
-		scanf("%d", &*p);
-		if (*p < 0)	printf("\nPhai nhap so DUONG. Nhap lai!");
-	} while (*p < 0);
+		scanf("%d", &*n);
+		if (*n < 0)	printf("\nPhai nhap so DUONG. Nhap lai!");
+	} while (*n < 0);
 }
 int tinhTOAN(int n)
 {	
