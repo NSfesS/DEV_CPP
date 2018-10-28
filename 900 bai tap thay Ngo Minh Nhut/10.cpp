@@ -11,7 +11,7 @@ int main()
 	printf("\nnhap n=\a");
 	scanf("%d",&n);
 	// tinh luy thua ta khai bao Phep tinh = pow(hang so , so mu);
-    	T=pow(x,n);
+    	T=pow(double(x),double(n));
 
 	printf("\t Tinh %d^%d=%d",x,n,T);
 
