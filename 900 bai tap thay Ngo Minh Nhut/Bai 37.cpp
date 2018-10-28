@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
+
 void notifications();
 void input(int *n);
 float perform(int n);
@@ -21,7 +21,6 @@ int main()
 }
 void notifications()
 {
-    system("color 03");
     printf("\n\t\tTINH sqrt(n)(n + sqrt(n) - 1(n - 1 +...+ sqrt(3)(3 + sqrt(2)(2))) co (n-1) sqrt");
 }
 void input(int *n)
