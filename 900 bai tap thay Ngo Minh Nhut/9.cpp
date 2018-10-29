@@ -7,18 +7,15 @@ int main()
     {
     	printf("\nNhap n:\t");
     	scanf("%d",&n);
-    	if(n<1) printf("Phai nhap n>=1. Nhap lai!:");
-	}
-	while(n<1);
-	a=1;
-	S=1;
+    	if(n < 1) printf("Phai nhap n>=1. Nhap lai!:");
+	} while(n<1);
 	// a<n vì S duoc khai bao (S=1) nen nó duoc tang tu 1->7 
 	//VD nhu (while) la S=[1+(1*1)]*[1+(1*2)]*[1+(1*3)]*...*
-	while(a<=n)
+	float S = 1;
+	for(int i = 1; i <= n ; i++)
 	{
-		S*=a;
-		printf("S(%d)= %d\n",a,S);
-		a++;
+		S*=i;
+		printf("S(%d)= %d\n",i,S);
 	}
 	printf("\n\tSn= %d",S);
 	return 0 ;
