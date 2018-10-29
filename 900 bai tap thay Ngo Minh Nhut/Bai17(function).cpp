@@ -3,8 +3,8 @@
 
 void notifications();
 void input(float *x, int *n);
-float mu(float x, int n);
-int giaiTHUA(int x);
+float mu(float x, int a);
+int giaiTHUA(int j);
 int main()
 {
     int flag = 1;
@@ -14,10 +14,9 @@ int main()
         int n;
         notifications();
         input(&x, &n);
-        //mu(x, n);
-        //giaiTHUA(n,i);
         float S = 0;
         for (int i = 1; i <= n; i++)
+            // ta gan function a <=> i.
             S += mu(x,i) / giaiTHUA(i);
         printf("\n\t[KET QUA] Sn = %f\n", S);
         printf("\nNhap 0 de thoat. Nhap bat ky de tiep tuc[_]\b\b");
@@ -40,17 +39,19 @@ void input(float *x, int *n)
         if (*n < 1) printf("\nNhap n > 0. Nhap lai!");
     } while (*n < 1);
 }
-float mu(float x, int n)
+// cu moi 1 vong lap la a se tang len 1 don vi cho float mu(x,i)
+float mu(float x, int a)
 {
     float M =0 ;
     for (int i = 1; i <= x; i++)
-         M = pow(double(x), double(n));
+         M = pow(double(x), double(a));
     return M;
 }
-int giaiTHUA(int x)
+// ta gan j <=> i trong ham giaiTHUA(i);
+int giaiTHUA(int j)
 {
     int gt = 1;
-    for (int i = 1; i <= x; i++)
-        gt *= i;
+    for (int i = 1; i <= j; i++)
+        gt *= j;
     return gt;
 }
