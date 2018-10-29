@@ -52,6 +52,6 @@ int giaiTHUA(int j)
 {
     int gt = 1;
     for (int i = 1; i <= j; i++)
-        gt *= j;
+        gt *= i;
     return gt;
 }
