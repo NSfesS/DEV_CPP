@@ -42,9 +42,7 @@ void input(float *x, int *n)
 // cu moi 1 vong lap la a se tang len 1 don vi cho float mu(x,i)
 float mu(float x, int a)
 {
-    float M =0 ;
-    for (int i = 1; i <= x; i++)
-         M = pow(double(x), double(a));
+    float M = pow(double(x), double(a));
     return M;
 }
 // ta gan j <=> i trong ham giaiTHUA(i);
