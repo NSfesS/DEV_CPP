@@ -1,28 +1,35 @@
 #include <stdio.h>
 #include <math.h>
-float x;
-int n;
+
+void notifications();
 void inputDATA(float *x, int *n);
-float TONG(float x, int n);
-// ham nay co tac dung thong bao (2)
-void notifications()
-{
-	printf("\t\t\t\t\TINH 1 + x^2/2! + x^4/4! + ... + x^2n/(2n)!");
-}
+float mu(float x, int a);
+int giaiTHUA(int j);
 // HAM CHINH(1)
 int main()
 { 
 	int flag = 1;
 	do
 	{
+        float x;
+        int n;
 		notifications();
 		inputDATA(&x, &n);
-		//TONG( x, n);
-		printf("\n\t=>>>[KET QUA] Sn = %.2f\n", TONG(x, n));
+		//TINH TOAN
+        float S = 0;
+        for (int i = 1; i <= n; i++)
+            S += (float)mu(x,i) / giaiTHUA(i);
+        printf("\n\t[KET QUA] Sn = %f", S + 1);
+        
 		printf("\nNhap 0 de thoat. Nhap bat ky de tiep tuc [_]\b\b");
 		scanf("%d",&flag);
 	} while (flag != 0);
 	return 0;
+}
+
+void notifications()
+{
+    printf("\t\t\t\t\TINH 1 + x^2/2! + x^4/4! + ... + x^2n/(2n)!");
 }
 // INPUT(3)
 void inputDATA(float *x, int *n)
@@ -37,18 +44,15 @@ void inputDATA(float *x, int *n)
 	} while (*n == 0);
 }
 //	TINH TOAN(4)
-float TONG(float x, int n)
+float mu(float x, int a)
 {
-	float S = 0;
-	int i, T = 1, gt = 1;
-	for (i = 1; i < n; i++)
-	{
-		T = 2 * i;
-		printf("\n Phan tu %d = %d", i, T);
-		gt *= 2 * i;
-		printf("\n Phan mau(giai thua) %d = %d", i, gt);
-		S += 1 + pow(double(x), double(float(T) / gt));
-		printf("\n=>>S(%d) = %.3f\n", i, S);
-	}
-	return S;
+    float M = pow(double(x), double(2*a));
+    return M;
+}
+int giaiTHUA(int j)
+{
+    int gt = 1;
+    for ( int i = 1; i <= j; i++)
+        gt *= (2*i)*(2*i-1);
+    return gt;
 }
