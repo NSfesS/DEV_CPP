@@ -34,8 +34,9 @@ void input(int *n)
 }
 float perform(int n)
 {
-    float S = pow(double(2),double((float(1)/2)));
-    for (int i = 3; i <= n; i++)
+    //float S = pow(double(2),double((float(1)/2)));
+    float S = 0;
+    for (int i = 2; i <= n; i++)
     {
         S = pow(double(i + S), double(float(1) / i));
     }
