@@ -1,9 +1,10 @@
+// BAI 36.
 #include <stdio.h>
-#include <math.h> 
+#include <math.h>
 
 void notifications();
 void input(int *n);
-float perform(int n);
+int giaiTHUA(int j);
 int main()
 {
     int flag = 1;
@@ -12,7 +13,10 @@ int main()
         int n;
         notifications();
         input(&n);
-        perform(n);
+        float S = 0;
+        for (int i = 1; i <= n; i++)
+            S = sqrt(S + giaiTHUA(i));
+        printf("\n\t=> [KET QUA] Sn = %f", S);
         printf("\n\t\t\t\tNhap 0 de thoat. Nhap bat ky de tiep tuc [_]\b\b");
         scanf("%d", &flag);
     } while (flag != 0);
@@ -32,17 +36,12 @@ void input(int *n)
     } while (*n <= 0);
 
 }
-float perform(int n)
+int giaiTHUA(int j)
 {
-    int i;
-    float S = 0;
     int gt = 1;
-    for (i = 1; i <= n; i++)
+    for (int i = 1; i <= j; i++)
     {
         gt *= i;
-        S = sqrt(gt + S);
     }
-    printf("\n[KET QUA] Sn = %f\n", S);
-    return S;
+    return gt;
 }
-
