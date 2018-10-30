@@ -4,6 +4,7 @@
 void notifications();
 void input(int *n);
 float perform(int n);
+
 int main()
 {
     int flag = 1;
@@ -33,8 +34,9 @@ void input(int *n)
 }
 float perform(int n)
 {
-    float S = pow(double(1), double(float(1) / 2));
-    for (int i = 2; i <= n; i++)
+    //float S = pow(double(1), double(float(1) / 2));
+    float S = 0;
+    for (int i = 1; i <= n; i++)
     {
         S = pow(double(i + S), double(float(1) / (i + 1)));
     }
