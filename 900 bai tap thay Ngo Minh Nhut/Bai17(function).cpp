@@ -3,8 +3,9 @@
 
 void notifications();
 void input(float *x, int *n);
-float mu(float x, int a);
-int giaiTHUA(int j);
+float mu(float x, int a);// int a la gia tri i khi i++ se thuc hien tinh ham mu++
+int giaiTHUA(int j);// cu moi lan i++ se gan vao j va thuc hien phep giai thua
+
 int main()
 {
     int flag = 1;
@@ -31,7 +32,7 @@ void notifications()
 void input(float *x, int *n)
 {
     printf("\n**Nhap x: \a");
-    scanf("%f", &*x);
+    scanf("%f", &*x);// khi ket qua sai quay lai day check co gan dung hay chua
     do
     {
         printf("\n**Nhap n: \a");
@@ -42,7 +43,7 @@ void input(float *x, int *n)
 // cu moi 1 vong lap la a se tang len 1 don vi cho float mu(x,i)
 float mu(float x, int a)
 {
-    float M = pow(double(x), double(a));
+    float M = pow(double(x), double(a));// khi vong lap trong int main() , i++ thi a cung a++
     return M;
 }
 // ta gan j <=> i trong ham giaiTHUA(i);
