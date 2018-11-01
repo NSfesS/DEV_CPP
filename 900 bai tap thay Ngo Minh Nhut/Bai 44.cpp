@@ -36,7 +36,7 @@ int perform(int n)
     while (n != 0)
     {
         S += n % 10;// lay du so cuoi se lay tu trai qua phai va giam dan moi lan interation
-        n = n / 10;// co nhiem vu lap khi = 0 se dung
+        n /= 10;// co nhiem vu lap khi = 0 se dung
     }
     return S;
 }
