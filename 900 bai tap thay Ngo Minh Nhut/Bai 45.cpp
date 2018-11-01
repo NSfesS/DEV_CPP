@@ -35,8 +35,8 @@ int perform(int n)
     int S = 1;// can than khi tinh *=.
     while (n != 0) // other n < 0.
     {
+        n /= 10;
         S *= n % 10;
-        n = n / 10;
     }
     return S;
 }
