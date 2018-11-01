@@ -35,11 +35,11 @@ void input(int *n)
 
 int demSL(int n)
 {
-    int soluong = 0, dem = n;
-    while (dem != 0)// khi chia con so != 0 thi interation den khi nao = 0 se dung.
+    int soluong = 0;
+    while (n != 0)// khi chia con so != 0 thi interation den khi nao = 0 se dung.
     {
         soluong++;// thng nay chi co tac dung dem so lan lap .
-        dem = dem / 10;// vd 35/10 = 3 interation 2 3/10 = 0 interation den end(chia so nguyen t ko can ep float).
+        n = n / 10;// vd 35/10 = 3 interation 2 3/10 = 0 interation den end(chia so nguyen t ko can ep float).
     }
     return soluong;// phep tinh hoi so luong 
 }
