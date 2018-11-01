@@ -39,7 +39,8 @@ int demSL(int n)
     while (n != 0)// khi chia con so != 0 thi interation den khi nao = 0 se dung.
     {
         soluong++;// thng nay chi co tac dung dem so lan lap .
-        n = n / 10;// vd 35/10 = 3 interation 2 3/10 = 0 interation den end(chia so nguyen t ko can ep float).
+        //other n = n / 10;
+        n /= 10;// vd 35/10 = 3 interation 2 3/10 = 0 interation den end(chia so nguyen t ko can ep float).
     }
     return soluong;// phep tinh hoi so luong 
 }
