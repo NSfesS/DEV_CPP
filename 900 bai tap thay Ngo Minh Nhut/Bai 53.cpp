@@ -46,3 +46,4 @@ int perform(int n)
     } while (n /= 10);
     return dem;
 }
+// BAI 54 THI CUNG NHU VAY THAY MAX THANH MIN IF( I < MIN) LA XONG.
