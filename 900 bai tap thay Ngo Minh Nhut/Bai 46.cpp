@@ -12,7 +12,7 @@ int main()
         int n;
         notifications();
         input(&n);
-        printf("\n[KET QUA] So luong so nguyen le cua %d la: %d", n, perform(n)+1);
+        printf("\n[KET QUA] So luong so nguyen le cua %d la: %d", n, perform(n));
         printf("\n\t\tNhap 0 de thoat. Nhap bat ky de tiep tuc[_]\b\b");
         scanf("%d", &flag);
     } while (flag != 0);
@@ -39,11 +39,11 @@ int perform(int n)
     {
         while (n)
         {
-            n /= 10;
-            if (n % 2 != 0)
+              if (n % 2 != 0)
             {
                 dem++;
             }
+            n /= 10;
         }
     }
     return dem;
