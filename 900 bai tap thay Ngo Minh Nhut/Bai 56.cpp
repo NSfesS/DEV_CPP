@@ -43,12 +43,10 @@ bool perform(int n)
 {
     while (n != 0)
     {
-        int check = n % 10;
-        if (check % 2 == 0)// if false thi no se nhay ra ngoai .
-        {
-            return true;// neu remainder for 2 thi return true.
-        }
-        n /= 10;
+        int check = n % 10;// lay phan du de check tu phai qua trai.
+        // if false thi no se nhay ra ngoai .
+        if (check % 2 == 0) return true; // neu remainder for 2 thi return true.
+        n /= 10;// lay so vua subtraction ra .
     }
     return false;
 }
